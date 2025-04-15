@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import NavLink from './components/NavLink.vue';
 </script>
 
 <template>
@@ -8,18 +9,12 @@
         <span class="font-love-light text-9xl grow before:content-['Andreas']"></span>
         <div class="flex flex-col">
           <div class="grow flex justify-end px-2">
-            <!-- put latest git SHA here -->andreas.diff.my.id@latest
+            andreas.diff.my.id@latest
           </div>
           <div class="flex gap-1 px-5">
-            <RouterLink to="/"
-              class="border-x border-t p-2 hover:bg-white hover:text-black transition-colors duration-100">Home
-            </RouterLink>
-            <RouterLink to="/portfolio"
-              class="border-x border-t p-2 hover:bg-white hover:text-black transition-colors duration-100">Portfolio
-            </RouterLink>
-            <RouterLink to="/blog"
-              class="border-x border-t p-2 hover:bg-white hover:text-black transition-colors duration-100">Blog
-            </RouterLink>
+            <NavLink display="Home" path="/" />
+            <NavLink display="Portfolio" path="/portfolio" />
+            <NavLink display="Blog" path="/blog" />
           </div>
         </div>
       </div>
