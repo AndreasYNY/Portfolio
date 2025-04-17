@@ -29,7 +29,7 @@ onMounted(async() => {
 </script>
 
 <template>
-  <div class="h-screen text-white flex justify-center font-mono">
+  <div class="h-screen text-white flex flex-col items-center font-mono">
     <div class="border h-max lg:w-[60rem]">
       <div class="flex border-b lg:w-[60rem]">
         <span class="font-love-light text-9xl grow before:content-['Andreas']"></span>
@@ -50,6 +50,9 @@ onMounted(async() => {
           <component :is="Component"></component>
         </router-view>
       </div>
+    </div>
+    <div class="text-xs italic">
+      est 2025
     </div>
   </div>
 </template>
