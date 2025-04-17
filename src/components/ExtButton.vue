@@ -16,7 +16,5 @@ defineProps({
 </script>
 
 <template>
-<a :href="href" class="grayscale hover:grayscale-0 duration-200">
-    <a :href="href"><img :src="src" :alt="alt"></a>
-</a>
+<a :href="href" class="grayscale hover:grayscale-0 duration-200"><img :src="src" :alt="alt"></a>
 </template>
