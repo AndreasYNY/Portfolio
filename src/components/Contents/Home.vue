@@ -112,7 +112,7 @@ _/\ __)/_)   pkgs   1126
             <div class="grid grid-cols-3">
                 <div class="">
                     Add my button plz
-                    <img src="../../assets/button.png" alt="Andreas's Page Button">
+                    <img src="https://raw.githubusercontent.com/AndreasYNY/Portfolio/refs/heads/master/src/assets/button.png" alt="Andreas's Page Button">
                     hotlinking is allowed
                 </div>
                 <div class="col-span-2">
