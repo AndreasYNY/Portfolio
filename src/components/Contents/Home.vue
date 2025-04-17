@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import Card from '../Card.vue';
+import Button from '../Button.vue';
+import ExtButton from '../ExtButton.vue';
 </script>
 
 <template>
     <div class="md:grid flex flex-col md:grid-cols-3 gap-2">
 
         <Card class="col-span-3" title="About">
-            <div class="flex justify-center gap-2">
+            <div class="flex justify-center gap-1">
                 <div class="w-full border-r p-1">
                     <p>
                         I'm a Fullstack developer, a collage student, and unempoloyed (for now, i hope, I REALY HOPE
@@ -87,6 +89,45 @@ _/\ __)/_)   pkgs   1126
             </ul>
         </Card>
 
+        <Card class="col-span-3" title="Links">
+            <div class="grid grid-cols-3 my-1 justify-center">
+                <div class="col-span-2 pr-1">
+                    Places where i might be:
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
+                        <Button href="https://github.com/andreasyny">Github</Button>
+                        <Button href="https://linkedin.com/in/andreasyozef">Linkedin</Button>
+                        <Button href="https://stackoverflow.com/users/10832570/andreasyny">Stackoverflow</Button>
+                        <Button href="https://mas.to/@xilla">Mastodon</Button>
+                    </div>
+                </div>
+                <div>
+                    Services I host:
+                    <div class="grid md:grid-cols-2 gap-1">
+                        <Button href="https://sear.diff.my.id">SearXNG</Button>
+                        <Button href="https://redlib.diff.my.id/">Redlib</Button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="grid grid-cols-3">
+                <div class="">
+                    Add my button plz
+                    <img src="../../assets/button.png" alt="Andreas's Page Button">
+                    hotlinking is allowed
+                </div>
+                <div class="col-span-2">
+                    Cool websites:
+                    <div class="flex flex-wrap gap-1">
+                        <ExtButton href="https://july.lol" src="https://july.lol/img/julybutton.gif"/>
+                        <ExtButton href="https://bechnokid.neocities.org/home/" src="https://raw.githubusercontent.com/bechnokid/neocities/refs/heads/master/public/assets/images/button.png" alt="Page button for Bechno Kid's Hideout"/>
+                        <ExtButton href="https://xylathemoth.neocities.org/" src="https://xylathemoth.neocities.org/images/button.png" alt="Page button for xylathemoth"/>
+                        <ExtButton href="https://rayncoat.nekoweb.org/" src="https://rayncoat.nekoweb.org/Art/RaynButton.gif" alt="Page button for RaynCoat"/>
+                        <ExtButton href="https://amfmradio.nekoweb.org/" src="https://amfmradio.nekoweb.org/stamp_B.png" alt="Page button for amfmradio"/>
+                        <ExtButton href="https://rice.place/" src="https://rice.nekoweb.org/button/ricedotplace.png"/>
+                    </div>
+                </div>
+            </div>
+        </Card>
 
     </div>
 </template>
