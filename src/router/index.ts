@@ -4,7 +4,7 @@ import NotFound from "../components/Contents/NotFound.vue";
 import Blog from "../components/Contents/Blog.vue";
 
 const router = createRouter({
-    history: createWebHistory("localhost"),
+    history: createWebHistory("/"),
     routes: [
         {
             path: '/:pathMatch(.*)*',
