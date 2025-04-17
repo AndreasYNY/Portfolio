@@ -31,10 +31,10 @@ onMounted(async() => {
 <template>
   <div class="h-screen text-white flex flex-col items-center font-mono">
     <div class="border h-max lg:w-[60rem]">
-      <div class="flex border-b lg:w-[60rem]">
+      <div class="flex border-b flex-col md:flex-row lg:w-[60rem]">
         <span class="font-love-light text-9xl grow before:content-['Andreas']"></span>
         <div class="flex flex-col">
-          <div class="grow flex justify-end md:px-2">
+          <div class="grow flex md:justify-end px-2">
             andreas.diff.my.id@{{ hash }}
           </div>
           <div class="flex gap-1 md:px-5">
