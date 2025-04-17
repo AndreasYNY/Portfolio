@@ -8,8 +8,8 @@ import ExtButton from '../ExtButton.vue';
     <div class="md:grid flex flex-col md:grid-cols-3 gap-2">
 
         <Card class="col-span-3" title="About">
-            <div class="flex justify-center gap-1">
-                <div class="w-full border-r p-1">
+            <div class="flex flex-col md:flex-row justify-center gap-1">
+                <div class="w-full md:border-r p-1">
                     <p>
                         I'm a Fullstack developer, a collage student, and unempoloyed (for now, i hope, I REALY HOPE
                         SO). Sometimes indecisive about stuff, likes to procrastinate like there is tomorrow, and sleeps
