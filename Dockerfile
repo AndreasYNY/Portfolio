@@ -2,7 +2,6 @@ FROM oven/bun:alpine AS build
 
 WORKDIR /app
 COPY . .
-RUN ls
 # bun vue can't run without nodejs...it's a 45mb package, so this image is posibly a 10mb image lmao
 RUN apk add nodejs
 RUN bun install
